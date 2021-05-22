@@ -8,6 +8,8 @@ dockerpath=moazario/mlproject:ml
 
 # Step 2
 # Run the Docker Hub container with kubernetes
+minikube start
+sleep 1m
 kubectl run mlpod --image=$dockerpath
 
 # Step 3:
