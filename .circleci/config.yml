@@ -22,7 +22,6 @@ jobs:
                     name: install dependencies
                     make: yes
                     command: |
-                        which python3
                         make setup
                         source .ml-microservice/bin/activate
                         make install
