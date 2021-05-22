@@ -23,9 +23,7 @@ jobs:
                     name: install dependencies
                     command: |
                         make setup
-                        cd .ml-microservice
-                        . bin/activate
-                        cd ..
+                        source .ml-microservice/bin/activate
                         make install
             -   save_cache:
                     paths:
