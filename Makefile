@@ -6,10 +6,10 @@
 # (Optional) Build a simple integration test
 
 setup:
-	@python3 -m venv .project-ml-microservice-kubernetes
+	@python3 -m venv .ml-microservice
 
 install:
-	pip install --upgrade pip &&\
+	@pip install --upgrade pip &&\
 		pip install -r requirements.txt
 
 test:
