@@ -11,6 +11,8 @@ setup:
 install:
 	@pip install --upgrade pip &&\
 		pip install -r requirements.txt
+	@wget -O ./.ml-microservice/bin/hadolint https://github.com/hadolint/hadolint/releases/download/v2.4.1/hadolint-Linux-x86_64
+	@sudo chmod +x .ml-microservice/bin/hadolint
 
 test:
 	# Additional, optional, tests could go here
