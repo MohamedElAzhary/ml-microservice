@@ -24,7 +24,7 @@ jobs:
                     make: yes
                     command: |
                         apt-get update
-                        apt-get install python3.8
+                        apt-get install python3.6
                         make setup
                         source .ml-microservice/bin/activate
                         make install
