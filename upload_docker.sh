@@ -5,7 +5,7 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+dockerpath=moazario/mlproject:ml
 
 # Step 2:  
 # Authenticate & tag
@@ -15,4 +15,4 @@ echo "Docker ID and Image: $dockerpath"
 # Push image to a docker repository
 #docker login --username USERNAME
 #docker push USERNAME/REPONAME:IMAGETAG
-docker push moazario/mlproject:ml
+docker push $dockerpath
