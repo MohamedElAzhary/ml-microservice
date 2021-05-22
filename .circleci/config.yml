@@ -22,7 +22,7 @@ jobs:
                     name: install dependencies
                     command: |
                         make setup
-                        source .ml-microservice/bin/activate
+                        . .ml-microservice/bin/activate
                         make install
                         hadolint --version
             -   save_cache:
@@ -34,5 +34,5 @@ jobs:
             -   run:
                     name: run lint
                     command: |
-                        source .ml-microservice/bin/activate
+                        . .ml-microservice/bin/activate
                         make lint 
