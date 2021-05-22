@@ -6,10 +6,10 @@
 # (Optional) Build a simple integration test
 
 setup:
-	which python3
-	python3 --version
-	/usr/local/bin/python3 -m venv .ml-microservice
-	/usr/bin/python3 -m venv .ml-microservice
+    python3 -m venv venv
+    . venv/bin/activate
+    mkdir .ml-microservice
+	python3 -m venv .ml-microservice
 
 install:
 	@pip install --upgrade pip &&\
