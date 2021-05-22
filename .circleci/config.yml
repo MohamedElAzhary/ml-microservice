@@ -24,7 +24,6 @@ jobs:
                         make setup
                         . .ml-microservice/bin/activate
                         make install
-                        hadolint --version
             -   save_cache:
                     paths:
                         -   ./ml-microservice
