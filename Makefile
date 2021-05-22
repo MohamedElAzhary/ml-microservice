@@ -6,7 +6,7 @@
 # (Optional) Build a simple integration test
 
 setup:
-    python3 -m venv venv
+    @python3 -m venv venv
     . venv/bin/activate
     mkdir .ml-microservice
 	python3 -m venv .ml-microservice
