@@ -7,6 +7,8 @@
 
 setup:
 	which python3
+	python3 --version
+	/usr/local/bin/python3 -m venv .ml-microservice
 	/usr/bin/python3 -m venv .ml-microservice
 
 install:
