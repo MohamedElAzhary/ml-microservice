@@ -6,11 +6,7 @@
 # (Optional) Build a simple integration test
 
 setup:
-	if !(test -f .ml-microservice/bin/activate)
-	then
-		echo "Creating environment"
-		python3 -m venv .ml-microservice
-	fi
+	if !(test -f .ml-microservice/bin/activate);then python3 -m venv .ml-microservice;fi;
 	. .ml-microservice/bin/activate
 
 install:
