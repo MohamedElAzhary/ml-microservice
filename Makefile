@@ -11,7 +11,7 @@ setup:
 install:
 	@pip install --upgrade pip &&\
 		pip install -r requirements.txt
-	@wget -O ./.ml-microservice/bin/hadolint https://github.com/hadolint/hadolint/releases/download/v2.4.1/hadolint-Linux-x86_64 \
+	@wget -O ./.ml-microservice/bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 \
 	&& chmod +x .ml-microservice/bin/hadolint
 	@wget -O ./.ml-microservice/bin/kubectl "https://dl.k8s.io/release/v1.21.1/bin/linux/amd64/kubectl" \
 	&& chmod +x .ml-microservice/bin/kubectl
