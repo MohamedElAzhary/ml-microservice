@@ -22,6 +22,8 @@ jobs:
             -   run:
                     name: install dependencies
                     command: |
+                        sudo apt-get update
+                        sudo apt-get install python3.8
                         make setup
                         source .ml-microservice/bin/activate
                         make install
