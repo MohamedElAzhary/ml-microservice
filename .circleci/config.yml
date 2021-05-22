@@ -10,7 +10,6 @@ jobs:
             - image: python:3.7.3-stretch
 
         working_directory: ~/repo
-
         steps:
             -   checkout
             # Download and cache dependencies
@@ -23,8 +22,7 @@ jobs:
                     name: install dependencies
                     make: yes
                     command: |
-                        apt-get update
-                        apt-get install python3.6
+                        which python3
                         make setup
                         source .ml-microservice/bin/activate
                         make install
