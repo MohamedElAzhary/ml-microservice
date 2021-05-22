@@ -7,7 +7,6 @@
 
 setup:
 	if !(test -f .ml-microservice/bin/activate);then python3 -m venv .ml-microservice;fi;
-	. .ml-microservice/bin/activate
 
 install:
 	@pip install --upgrade pip &&\
