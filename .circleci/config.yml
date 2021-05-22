@@ -24,6 +24,7 @@ jobs:
                         make setup
                         source .ml-microservice/bin/activate
                         make install
+                        make lint
             -   save_cache:
                     paths:
                         -   ./ml-microservice
